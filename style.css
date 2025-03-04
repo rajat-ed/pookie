@@ -1,0 +1,108 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #1a1a1a;
+    color: #00ff00;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative; /* For footer positioning */
+}
+
+#container {
+    display: flex;
+    width: 1000px;
+    height: 600px;
+}
+
+#leftPanel {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameCanvas {
+    border: 2px solid #00ff00;
+    background-color: #0a0a0a;
+    box-shadow: 0 0 10px #00ff00;
+    width: 500px;
+    height: 500px;
+}
+
+#rightPanel {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#instructions {
+    text-align: center;
+}
+
+#inputSection {
+    text-align: center;
+}
+
+#functionInput {
+    background-color: #0a0a0a;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    padding: 5px;
+    width: 80%;
+    font-family: 'Courier New', monospace;
+}
+
+#keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.keypadBtn {
+    background-color: #0a0a0a;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    padding: 5px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+}
+
+.keypadBtn:hover {
+    background-color: #00ff00;
+    color: #0a0a0a;
+}
+
+#submitBtn {
+    margin-top: 10px;
+    background-color: #0a0a0a;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+}
+
+#submitBtn:hover {
+    background-color: #00ff00;
+    color: #0a0a0a;
+}
+
+#resultDisplay {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: #00ff00;
+}

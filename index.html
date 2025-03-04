@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pookie's Graph Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="leftPanel">
+            <canvas id="gameCanvas" width="500" height="500"></canvas>
+        </div>
+        <div id="rightPanel">
+            <div id="instructions">
+                <h1>Pookie's Graph Adventure</h1>
+                <p>Level: <span id="levelDisplay"></span> | Equation: <span id="equationDisplay"></span>/5 | Dabloons: <span id="dabloonsDisplay"></span></p>
+                <p>Guide Pookie from (<span id="startXDisplay"></span>, <span id="startYDisplay"></span>) to (<span id="goalXDisplay"></span>, <span id="goalYDisplay"></span>)</p>
+            </div>
+            <div id="inputSection">
+                <input type="text" id="functionInput" placeholder="e.g., x^2">
+                <div id="keypad">
+                    <button class="keypadBtn" onclick="addToInput('log(')">log</button>
+                    <button class="keypadBtn" onclick="addToInput('sin(')">sin</button>
+                    <button class="keypadBtn" onclick="addToInput('cos(')">cos</button>
+                    <button class="keypadBtn" onclick="addToInput('tan(')">tan</button>
+                    <button class="keypadBtn" onclick="addToInput('exp(')">exp</button>
+                    <button class="keypadBtn" onclick="addToInput('1/')">1/x</button>
+                    <button class="keypadBtn" onclick="addToInput('x')">x</button>
+                    <button class="keypadBtn" onclick="addToInput('^')">^</button>
+                    <button class="keypadBtn" onclick="addToInput('+')">+</button>
+                    <button class="keypadBtn" onclick="addToInput('-')">-</button>
+                    <button class="keypadBtn" onclick="addToInput('*')">*</button>
+                    <button class="keypadBtn" onclick="addToInput('/')">/</button>
+                </div>
+                <button id="submitBtn" onclick="checkEquation()">Submit</button>
+            </div>
+            <div id="resultDisplay"></div>
+        </div>
+    </div>
+    <div id="footer">Pookie's Graph Adventure by Rajat</div>
+    <script src="script.js"></script>
+</body>
+</html>
